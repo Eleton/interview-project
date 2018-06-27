@@ -1,0 +1,7 @@
+{
+  "/app-api": {
+    "target": "https://cloud-xr.wec360.com",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
