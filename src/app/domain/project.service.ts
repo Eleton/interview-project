@@ -13,11 +13,13 @@ export class ProjectService {
   // start appen och titta här för att se feeded: http://localhost:4200/app-api/v2/projects
   apiUrl = '/app-api/v2/projects';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.getProjects = this.getProjects.bind(this);
+  }
 
   getProjects(): Observable<Project[]> {
     // @todo Hämta alla project och filtrera ut visible: false
-    return of([]);
+    return this.http.get<Project[]>(this.apiUrl)
   }
 
 }
