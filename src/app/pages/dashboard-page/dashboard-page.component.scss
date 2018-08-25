@@ -2,6 +2,13 @@ wec-dashboard-page {
   display: block;
 }
 
+.centering {
+  display: flex;
+  justify-content: center;
+}
+
 .project-list {
   display: grid;
+  grid-template-columns: 20vw 20vw 20vw;
+  grid-gap: 10px 10px;
 }

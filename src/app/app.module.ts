@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DomainModule } from './domain';
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
+import { MatCardModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,11 @@ import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.co
   imports: [
     BrowserModule,
     DomainModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCardModule
+  ],
+  exports: [
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
