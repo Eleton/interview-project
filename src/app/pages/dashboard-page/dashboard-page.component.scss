@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(250,250,250);
+}
+
 wec-dashboard-page {
   display: block;
 }
@@ -9,6 +13,6 @@ wec-dashboard-page {
 
 .project-list {
   display: grid;
-  grid-template-columns: 20vw 20vw 20vw;
+  grid-template-columns: 30vw 30vw 30vw;
   grid-gap: 10px 10px;
 }
