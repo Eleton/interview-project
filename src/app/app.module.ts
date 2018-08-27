@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { DomainModule } from './domain';
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
 import { MatCardModule } from '@angular/material';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardPageComponent
+    DashboardPageComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,

@@ -3,10 +3,9 @@
 <div class="centering">
   <div class="project-list">
     <!-- lista av mat-cards -->
-    <mat-card *ngFor="let p of projects | async">
-      <img mat-card-image src="{{ p.images[0] }}">
-      <mat-card-title>{{ p.name }}</mat-card-title>
-      <mat-card-subtitle>{{ p.customer }}</mat-card-subtitle>
-    </mat-card>
+    <wec-project-card
+      *ngFor="let project of projects | async"
+      [project]="project">
+    </wec-project-card>
   </div>
 </div>
