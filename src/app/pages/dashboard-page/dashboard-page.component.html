@@ -1,10 +1,10 @@
 <h1 class="centering">Projektlista</h1>
-<wec-project-search></wec-project-search>
+<wec-project-search (typed)="t($event)"></wec-project-search>
 <div class="centering">
   <div class="project-list">
     <!-- lista av mat-cards -->
     <wec-project-card
-      *ngFor="let project of projects | async"
+      *ngFor="let project of filteredProjects | async"
       [project]="project">
     </wec-project-card>
   </div>

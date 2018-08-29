@@ -1,5 +1,5 @@
 <div class="container">
   <div class="content">
-    <input placeholder="Search">
+    <input #textInput placeholder="Search" (keyup)="type(textInput.value)">
   </div>
 </div>

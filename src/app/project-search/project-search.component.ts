@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'wec-project-search',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectSearchComponent implements OnInit {
 
+  @Output() typed = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  type(text: string) {
+    this.typed.emit(text);
+  }
 }
